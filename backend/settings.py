@@ -26,22 +26,24 @@ STATICFILES_DIRS = ["./static/"]
 SECRET_KEY = "django-insecure-f=6*(27j#ui-hkdutt8cc=22dzkyv^0ui71)vse6=y7u2_17-*"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+USE_X_FORWARDED_PORT = True
+# USE_X_FORWARDED_HOST = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     "channels",
+    "webrtc",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "webrtc",
 ]
 ASGI_APPLICATION = "backend.asgi.application"
 CHANNEL_LAYERS = {"default": {"BACKEND": "channels.layers.InMemoryChannelLayer"}}
