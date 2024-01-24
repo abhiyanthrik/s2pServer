@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = "./static/"
 STATICFILES_DIRS = ["./static/"]
 
-STATIC_ROOT = "./static/"
+STATIC_ROOT = BASE_DIR / 'productionFiles'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
