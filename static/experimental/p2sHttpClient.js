@@ -1,3 +1,4 @@
+//from static
 var pc = null;
 function createPeerConnection() {
   var config = {
