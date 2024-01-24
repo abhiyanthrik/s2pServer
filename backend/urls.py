@@ -21,6 +21,6 @@ from django.conf.urls.static import static
 from backend import settings
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("webrtc.urls"))]
-
+    path("", include("webrtc.urls"))
+]
 # ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
