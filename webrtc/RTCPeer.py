@@ -45,6 +45,7 @@ class RTCPeer:
             @channel.on("message")
             def on_message(m):
                 print("data channel: " + m)
+                channel.send("server = " + m)
 
         @pc.on("track")
         def on_track(track):
