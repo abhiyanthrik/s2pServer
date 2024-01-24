@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 STATIC_URL = "/static/"
-STATICFILES_DIRS = ["./static/"]
+# STATICFILES_DIRS = ["./static/"]
 
 STATIC_ROOT = 'static'
 # Quick-start development settings - unsuitable for production
@@ -28,7 +28,7 @@ STATIC_ROOT = 'static'
 SECRET_KEY = "django-insecure-f=6*(27j#ui-hkdutt8cc=22dzkyv^0ui71)vse6=y7u2_17-*"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 USE_X_FORWARDED_PORT = True
 # USE_X_FORWARDED_HOST = True

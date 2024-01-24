@@ -3,6 +3,10 @@ var pc = null;
 function createPeerConnection() {
   var config = {
     sdpSemantics: "unified-plan",
+    portRange: {
+        min: 10000,
+        max: 20000,
+      }
   };
 
   config.iceServers = [
